@@ -1,0 +1,16 @@
+[
+null,
+{"id":1,"expanded":false,"name":"Estudio","order":2,"parentId":0,"scrollX":801,"scrollY":523.5},
+{"id":2,"expanded":false,"name":"Escuela Esterior","order":8,"parentId":0,"scrollX":572.5,"scrollY":944.5},
+{"id":3,"expanded":true,"name":"Escuela (piso 1)","order":3,"parentId":0,"scrollX":668.5,"scrollY":444.5},
+{"id":4,"expanded":false,"name":"Intro","order":1,"parentId":0,"scrollX":531.5,"scrollY":324.5},
+{"id":5,"expanded":false,"name":"Escuela (piso 2)","order":4,"parentId":0,"scrollX":668.5,"scrollY":326.5},
+{"id":6,"expanded":false,"name":"Sotano Escuela","order":5,"parentId":0,"scrollX":668,"scrollY":956.5},
+{"id":7,"expanded":false,"name":"Laberinto","order":7,"parentId":0,"scrollX":1868.5,"scrollY":2030.5},
+{"id":8,"expanded":false,"name":"Pasillo","order":6,"parentId":0,"scrollX":531.5,"scrollY":372.5},
+{"id":9,"expanded":false,"name":"Pasadiso","order":9,"parentId":0,"scrollX":532,"scrollY":299.5},
+{"id":10,"expanded":false,"name":"Laboratorio","order":10,"parentId":0,"scrollX":531.5,"scrollY":1246.5},
+{"id":11,"expanded":false,"name":"Area de pruebas","order":11,"parentId":0,"scrollX":532,"scrollY":324.5},
+{"id":12,"expanded":false,"name":"Pasillo de Mostros","order":12,"parentId":0,"scrollX":532,"scrollY":299.5},
+{"id":13,"expanded":false,"name":"Guarida del Jefe","order":13,"parentId":0,"scrollX":531.5,"scrollY":299.5}
+]

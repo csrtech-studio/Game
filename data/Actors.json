@@ -1,0 +1,6 @@
+[
+null,
+{"id":1,"battlerName":"SF_Actor3_8","characterIndex":7,"characterName":"SF_Actor3","classId":8,"equips":[2,0,0,0,0],"faceIndex":7,"faceName":"SF_Actor3","traits":[],"initialLevel":1,"maxLevel":99,"name":"Diana","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"SF_Actor3_7","characterIndex":6,"characterName":"SF_Actor3","classId":7,"equips":[1,0,0,0,0],"faceIndex":2,"faceName":"SF_People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Nando","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"","characterIndex":0,"characterName":"chavez","classId":3,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Personajes","traits":[],"initialLevel":1,"maxLevel":99,"name":"Profesor Chavez","nickname":"","note":"","profile":""}
+]
