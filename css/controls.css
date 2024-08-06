@@ -2,18 +2,19 @@
 
 #controls {
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000; /* Asegura que los controles estén sobre otros elementos */
 }
 
 #controls button {
-    width: 70px;
-    height: 70px;
-    margin: 5px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
     font-size: 24px;
     border: none;
     border-radius: 10px;
