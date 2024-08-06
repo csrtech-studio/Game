@@ -5,30 +5,7 @@ body {
     user-select: none;
 }
 
-/* css/game.css */
 
-#game-container {
-    width: 100%;
-    height: calc(100vh - 150px); /* Ajuste para el contenedor del juego */
-    transition: height 0.3s; /* Transición suave al cambiar el tamaño */
-}
-
-#fullscreen-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#fullscreen-button:active {
-    background-color: #888; /* Color al presionar el botón */
-}
 
 #errorPrinter {
     position: absolute;
@@ -139,4 +116,28 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+/* css/game.css */
+
+#game-container {
+    width: 100%;
+    height: calc(100vh - 150px); /* Ajuste para el contenedor del juego */
+    transition: height 0.3s; /* Transición suave al cambiar el tamaño */
+}
+
+#fullscreen-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#fullscreen-button:active {
+    background-color: #888; /* Color al presionar el botón */
 }
