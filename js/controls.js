@@ -4,11 +4,28 @@ document.querySelectorAll('#controls button').forEach(button => {
     button.addEventListener('touchstart', (event) => {
         event.preventDefault(); // Evita el comportamiento por defecto del toque
         simulateKeyPress(button.id);
+        button.classList.add('active'); // Añade una clase para el estado activo del botón
+    });
+
+    button.addEventListener('touchend', (event) => {
+        event.preventDefault(); // Evita el comportamiento por defecto del toque
+        button.classList.remove('active'); // Elimina la clase cuando se deja de tocar
     });
 
     button.addEventListener('mousedown', (event) => {
         event.preventDefault(); // Evita el comportamiento por defecto del clic
         simulateKeyPress(button.id);
+        button.classList.add('active'); // Añade una clase para el estado activo del botón
+    });
+
+    button.addEventListener('mouseup', (event) => {
+        event.preventDefault(); // Evita el comportamiento por defecto del clic
+        button.classList.remove('active'); // Elimina la clase cuando se suelta el clic
+    });
+
+    button.addEventListener('mouseleave', (event) => {
+        event.preventDefault(); // Evita el comportamiento por defecto del clic
+        button.classList.remove('active'); // Elimina la clase si el ratón sale del botón
     });
 });
 

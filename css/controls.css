@@ -21,10 +21,15 @@
     background-color: #444;
     color: white;
     outline: none;
+    transition: background-color 0.1s;
+}
+
+#controls button.active {
+    background-color: #888; /* Color cuando el botón está activo */
 }
 
 #controls button:active {
-    background-color: #888;
+    background-color: #888; /* Color al presionar el botón */
 }
 
 #controls div {
