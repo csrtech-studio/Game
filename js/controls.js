@@ -1,28 +1,31 @@
 // js/controls.js
 
-document.getElementById('up').addEventListener('touchstart', () => {
-    simulateKeyPress('ArrowUp');
+document.querySelectorAll('#controls button').forEach(button => {
+    button.addEventListener('touchstart', (event) => {
+        event.preventDefault(); // Evita el comportamiento por defecto del toque
+        simulateKeyPress(button.id);
+    });
+
+    button.addEventListener('mousedown', (event) => {
+        event.preventDefault(); // Evita el comportamiento por defecto del clic
+        simulateKeyPress(button.id);
+    });
 });
 
-document.getElementById('down').addEventListener('touchstart', () => {
-    simulateKeyPress('ArrowDown');
-});
-
-document.getElementById('left').addEventListener('touchstart', () => {
-    simulateKeyPress('ArrowLeft');
-});
-
-document.getElementById('right').addEventListener('touchstart', () => {
-    simulateKeyPress('ArrowRight');
-});
-
-document.getElementById('enter').addEventListener('touchstart', () => {
-    simulateKeyPress('Enter');
-});
-
-function simulateKeyPress(key) {
-    const event = new KeyboardEvent('keydown', { key: key, keyCode: keyToKeyCode(key), which: keyToKeyCode(key), bubbles: true });
-    document.dispatchEvent(event);
+function simulateKeyPress(buttonId) {
+    const keyMapping = {
+        'up': 'ArrowUp',
+        'down': 'ArrowDown',
+        'left': 'ArrowLeft',
+        'right': 'ArrowRight',
+        'enter': 'Enter'
+    };
+    
+    const key = keyMapping[buttonId];
+    if (key) {
+        const event = new KeyboardEvent('keydown', { key: key, keyCode: keyToKeyCode(key), which: keyToKeyCode(key), bubbles: true });
+        document.dispatchEvent(event);
+    }
 }
 
 function keyToKeyCode(key) {
