@@ -1,22 +1,22 @@
 // js/controls.js
 
-document.getElementById('up').addEventListener('click', () => {
+document.getElementById('up').addEventListener('touchstart', () => {
     simulateKeyPress('ArrowUp');
 });
 
-document.getElementById('down').addEventListener('click', () => {
+document.getElementById('down').addEventListener('touchstart', () => {
     simulateKeyPress('ArrowDown');
 });
 
-document.getElementById('left').addEventListener('click', () => {
+document.getElementById('left').addEventListener('touchstart', () => {
     simulateKeyPress('ArrowLeft');
 });
 
-document.getElementById('right').addEventListener('click', () => {
+document.getElementById('right').addEventListener('touchstart', () => {
     simulateKeyPress('ArrowRight');
 });
 
-document.getElementById('enter').addEventListener('click', () => {
+document.getElementById('enter').addEventListener('touchstart', () => {
     simulateKeyPress('Enter');
 });
 
